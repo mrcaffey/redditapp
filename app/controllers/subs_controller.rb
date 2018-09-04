@@ -22,6 +22,7 @@ class SubsController < ApplicationController
 
   def create
     @sub = Sub.new(sub_params)
+    
     if @sub.save
       redirect_to subs_path
     else
